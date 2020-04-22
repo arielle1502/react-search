@@ -29,7 +29,7 @@ export class Search extends Component {
         return (
             <div>
                 <form onSubmit= {this.onSubmit} className ="form">
-                    <input
+                    <input className ="searchBar"
                      type="text"
                      name="text"
                      placeholder="Search Movies.." 
@@ -37,7 +37,7 @@ export class Search extends Component {
                      onChange={this.onChange}/>
                     <input type="submit" value="Search" className="btn btn-dark btn-block"/>
                 </form>
-                    <button className="btn btn-light btn-block" 
+                    <button className="btn btn-light btn-block clear" 
                     onClick={this.props.clearMovies}>Clear Search</button>
             
                 

@@ -1,9 +1,44 @@
 
-.titleBar{
-  background-color:#666;
-  display: block;
-  color: #fff;
-  padding-left:16px
+body{
+  background-color: rgb(236, 236, 236);
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  height:50px
+}
+
+.topnav .left {
+float: left;
+color: #2947f0;
+text-align: center;
+/* padding: 14px 16px; */
+text-decoration: none;
+font-size: 50px;
+padding:0 15px
+}
+.topnav h1{
+  float: left;
+  /* padding-top:15px; */
+  color:rgb(165, 165, 165);
+}
+.topnav .link{
+  color:white;
+  padding: 0 3rem;
+  font-size:20px;
+ 
+}
+
+.topnav .link:hover {
+color: rgb(179, 179, 179);
+}
+
+.topnav-right {
+float: right;
+margin-top:15px;
+}
+nav{
+  font-family: 'Raleway', sans-serif;
 }
 .searchBar{
   font-size: 24px;
@@ -12,8 +47,81 @@
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
+  margin:10px;
+  border-radius:5px;
 }
+/* .clear{
+  background-color: #4560f8;
+} */
 .App {
   text-align: center;
 }
+.fa-star{
+  color:rgba(238, 238, 63, 0.918)
+}
+.card h1{
+  font-family: 'Raleway', sans-serif;
+  font-size:3rem;
+  text-decoration: underline;
+}
+.tagline{
+  font-family: 'Dancing Script', cursive;
+}
+ .card h5{
+   text-align: justify;
+   margin:0 30px;
+ }
 
+ .Movie-component {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.moviesumm{
+  padding:20px;
+  margin:30px auto;
+  font-family: 'Raleway', sans-serif;
+}
+.movieimage{
+  padding:20px;
+  margin:30px auto;
+  font-family: 'Raleway', sans-serif;
+}
+.moviesumm h2{
+  text-decoration: underline;
+}
+.moviesumm h3{
+  color:grey;
+  
+}
+.btosearch{
+  border-radius:50%;
+  padding:15px 20px
+}
+.frontpage h2{
+  font-family: 'Raleway', sans-serif;
+  font-size:3rem;
+}
+.date{
+  border: 1px solid #4762fc;
+  border-radius: 5px;
+  background-color:rgb(245, 245, 245);
+  width:200px;
+  margin:auto;
+}
+.frontpage .btn{
+  margin:20px auto;
+}
+.btn-block{
+  margin: 10px auto;
+  width:75%;
+  border:1px solid #4762fc;
+}
+.summary{
+  font-size:1rem;
+  text-align: justify;
+}
+.card{
+  border:1px solid #4762fc;
+}

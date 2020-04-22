@@ -27,7 +27,7 @@ class App extends Component{
     this.setState({ loading: true});
     const res = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=31312df25474a7f45c2d9fc01558cea4&language=en-US&query=${text}&page=1&include_adult=false`);
     this.setState({movies: res.data.results, loading:false})
-    console.log(text)
+    console.log(res.data.results)
   }
   // get single movie item
   getMovie = async (id) => {
