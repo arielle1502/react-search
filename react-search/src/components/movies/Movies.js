@@ -1,3 +1,4 @@
+// the movies component maps over the api data and passes the props to the MovieItem component
 import React from 'react';
 import MovieItem from './MovieItem';
 import Spinner from '../layout/Spinner';

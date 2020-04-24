@@ -1,3 +1,5 @@
+// the search component takes the text that the uer eneters into the searchbar and holds it in a state, the seachMovies function is then called and the text within the state is used to search the api data
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 

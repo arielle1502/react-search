@@ -1,3 +1,4 @@
+// the Movie component calls the getMovie function that loads the detailed data from the aPI for an indivual movie and passes the props into the UI for the single movie page
 import React, { Component, Fragment } from 'react';
 import Spinner from '../layout/Spinner';
 import PropTypes from 'prop-types';

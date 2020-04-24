@@ -16,20 +16,15 @@ class App extends Component{
     loading: false, 
     alert: null
   }
-  // async componentDidMount(){
-  //   this.setState({ loading: true});
-  //   const res = await axios.get('https://api.themoviedb.org/3/search/movie?api_key=31312df25474a7f45c2d9fc01558cea4&language=en-US&query=%20women&page=1&include_adult=false');
-  //   this.setState({movies: res.data.results, loading:false})
-    
-  // }
-  // searches movie db api
+ 
+  // searches movie db api loads data into variable 'res'
   searchMovies = async (text) =>{
     this.setState({ loading: true});
     const res = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=31312df25474a7f45c2d9fc01558cea4&language=en-US&query=${text}&page=1&include_adult=false`);
     this.setState({movies: res.data.results, loading:false})
     console.log(res.data.results)
   }
-  // get single movie item
+  // get single movie item from api, holds specific detaisl for one movie using the movie's ID
   getMovie = async (id) => {
     this.setState({ loading: true})
     const res = await axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=31312df25474a7f45c2d9fc01558cea4&language=en-US`);

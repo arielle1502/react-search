@@ -1,3 +1,5 @@
+// the MovieItem component takes props and loads them into the UI for the cards that load on the homepage once a search has been submitted.
+
 import React from 'react';
 import {Link} from 'react-router-dom'
 
